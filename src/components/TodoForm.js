@@ -19,7 +19,7 @@ function TodoForm() {
             GetTodo(setTodo);
             setInput("");
           })
-          .catch(e => console.log(e));
+          .catch(e => console.log(`formOnSubmit Error: ${e}`));
       }
     } else {
       if (input.length >= 3) {
@@ -40,7 +40,7 @@ function TodoForm() {
       body: JSON.stringify({ content: content }),
     })
       .then(() => GetTodo(setTodo))
-      .catch(e => console.log(e));
+      .catch(e => console.log(`updateTodo Error: ${e}`));
   }
   useEffect(() => {
     if (editTodo) {

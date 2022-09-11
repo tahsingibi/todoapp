@@ -20,7 +20,7 @@ const Provider = ({ children }) => {
     fetch(process.env.REACT_APP_TODOAPI)
       .then(res => res.json())
       .then(setTodo)
-      .catch(e => console.log(`veri çekilirken hata: ${e}`));
+      .catch(e => console.log(`Context/useEffect Error: ${e}`));
   }, []);
 
   const data = {

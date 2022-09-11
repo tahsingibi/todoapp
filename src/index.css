@@ -21,7 +21,7 @@ h1{@apply text-4xl}
 .LoginPage form > button{@apply bg-indigo-600 text-white disabled:opacity-50 disabled:cursor-not-allowed}
 .LoginPage > .characterAlert{@apply border-l border-current pl-2 text-orange-400 font-semibold text-sm}
 
-.TodoApp > .Header{@apply text-indigo-900 bg-indigo-50 dark:bg-zinc-900/50 dark:text-zinc-400 text-xs shadow-inner rounded flex justify-between py-2 px-4}
+.Header{@apply text-indigo-900 capitalize bg-indigo-50 dark:bg-zinc-900/50 dark:text-zinc-400 text-xs shadow-inner rounded flex justify-between py-2 px-4}
 .todoNotify{@apply my-4}
 .logout{@apply text-red-600 font-semibold}
 

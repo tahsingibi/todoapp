@@ -5,7 +5,7 @@ function GetTodo(setTodo) {
       const todojson = await todoget.json();
       setTodo(todojson);
     } catch (error) {
-      console.log(error);
+      console.log(`GetTodo Error: ${error}`);
     }
   };
 

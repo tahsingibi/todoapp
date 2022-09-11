@@ -11,7 +11,7 @@ function TodoList() {
       body: JSON.stringify({ isCompleted: !isCompleted }),
     })
       .then(() => GetTodo(setTodo))
-      .catch(e => console.log(`error ${e}`));
+      .catch(e => console.log(`itemState Error: ${e}`));
   };
 
   const itemDelete = id => {
@@ -19,7 +19,7 @@ function TodoList() {
       method: "DELETE",
     })
       .then(() => GetTodo(setTodo))
-      .catch(e => console.log(`delete error: ${e}`));
+      .catch(e => console.log(`itemDelete Error: ${e}`));
   };
 
   const itemEdit = id => {
