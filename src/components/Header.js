@@ -1,10 +1,10 @@
-import { useAll } from "../context/Context";
+import { useAll } from '../context/Context';
 
 function Header() {
   const { logged, setLogged } = useAll();
   const logout = () => {
     setLogged(false);
-    localStorage.removeItem("user");
+    localStorage.removeItem('user');
   };
   return (
     <header className="Header">
